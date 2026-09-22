@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você Decide o Futuro da IA</title>
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="caixa-principal">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo-container">
+                <i class="fa-solid fa-brain icon-title"></i>
+                <h1>Você Decide o Futuro da IA</h1>
+            </div>
+            <!-- Barra de Progresso -->
+            <div class="barra-progresso-container">
+                <div class="barra-progresso" id="barra-progresso"></div>
+            </div>
+        </header>
+
+        <!-- Banner / Imagem de Ilustração -->
+        <div class="imagem-container">
+            <img id="imagem-card" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Ilustração sobre IA">
+        </div>
+
+        <!-- Tela 1: Interação Inicial com a Plateia -->
+        <div id="tela-interativa" class="card-secao">
+            <h2><i class="fa-solid fa-comments"></i> Pergunta para a Plateia</h2>
+            <p class="texto-interativo">Antes de começarmos, levantem a mão ou reflitam: <strong>Vocês acham que a Inteligência Artificial vai nos substituir ou nos capacitar nos próximos anos?</strong></p>
+            <button id="btn-iniciar" class="btn-destaque"><i class="fa-solid fa-play"></i> Iniciar Demonstração / Quiz</button>
+        </div>
+
+        <!-- Tela 2: Caixa de Perguntas e Alternativas -->
+        <div id="tela-quiz" class="card-secao esconde">
+            <div class="caixa-perguntas"></div>
+            <div class="caixa-alternativas"></div>
+        </div>
+
+        <!-- Tela 3: Resultado & Impacto Final -->
+        <div id="tela-resultado" class="caixa-resultado esconde">
+            <h2><i class="fa-solid fa-square-poll-vertical"></i> O Futuro que Você Construiu em 2049</h2>
+            <p class="texto-resultado"></p>
+            
+            <!-- Slide / Bloco de Impacto e Reflexão -->
+            <div class="slide-impacto">
+                <h3><i class="fa-solid fa-lightbulb"></i> Reflexão & Impacto do Projeto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Conscientização:</strong> Cada escolha tecnológica no presente molda a nossa sociedade futura.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Responsabilidade:</strong> A IA é uma ferramenta; o discernimento moral e ético continua sendo estritamente humano.</li>
+                    <li><i class="fa-solid fa-check-circle"></i> <strong>Ação:</strong> Como você pretende utilizar a Inteligência Artificial a partir de hoje?</li>
+                </ul>
+                <button onclick="location.reload()" class="btn-reiniciar"><i class="fa-solid fa-rotate-right"></i> Reiniciar Experiência</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
